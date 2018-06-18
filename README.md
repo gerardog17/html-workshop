@@ -247,7 +247,19 @@ Los selectores son usados para definir el contenido HTML al que le quremmos apli
     }
 * Pseudo-clases: selecciona uno o más elementos que se encuentran en algún estado(por ejemplo _hover_).
 * Pseudo-elementos: selecciona uno o más partes de contenido que se encuentran en cierta posición en relación a otro elemento, por ejemplo la primera palabra de un párrafo.
-* Combinadores: En este caso no son selectores en si, si no son una forma de combinar dos o más selectores en una forma mucho más específica, por ejemplo, los párrafos que son _descendientes_ directos de divs o que están inmediantamente después de un elemento _h_.
+* Combinadores: En este caso no son selectores en si, si no son una forma de combinar dos o más selectores en una forma mucho más específica, por ejemplo, los párrafos que son _descendientes_ directos de divs o que están inmediantamente después de un elemento _h_.   _Combinadores CSS_: Un combinador es algo que explica la relación entre selectores, un selector de CSS puede contener más de un selector simple. Entre los selectores simples se puede incluir un combinador.
+ Hay cuatro combinadores diferentes en CSS3:
+   * Selector de descendiente (space). El selector de descendiente coincide con todos los elementos que son descendientes de un elemento especificado. En el siguiente ejemplo los "<p>" elementos dentro de "<div>" elementos.
+   Ejemplo de selector de descendiente:
+```css
+       div p {
+           background-color: yellow;
+       }
+```
+   * Selector de hijo (>)
+   * Selector de hermanos adyacentes (+)
+   * Interruptor general de hermanos (~)
+   Ejemplo de selector de decendiente:
 * Selectores múltiples: La idea de estos selectores es usar el mismo conjunto de declaraciones para varios selectores separados por comas.
 
 ![](https://mdn.mozillademos.org/files/3668/css%20syntax%20-%20ruleset.png)
